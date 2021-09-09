@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .header{
+
+            width: 100%;
+            position: relative;
+            height: 100vh;
+            padding: 0 8%;
+        }
+       .nav img{
+            width: 180px;
+
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navl a{
+            font-size: 2.5rem;
+            text-decoration: none;
+            color: white;
+            margin-left: 60px;
+            margin-right: 60px;
+            border: none;
+            transition: border-bottom 0.5s;
+
+        }
+        .nav a:hover{
+            border-bottom: 2px solid turquoise;
+            transition: all;
+        }
+        .btn a{
+            border: none
+        }
+        .button{
+            font-size: 2.5rem;
+            border: none;
+            background-color: #D63B5B;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .main{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 90%;
+            max-width: 900px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        h1{
+            color: white;
+            font-size: 5.3rem;
+        }
+        .main form{
+            background: white;
+            padding: 10px;
+            display: flex;
+            border-radius: 8px;
+        }
+        .main form input{
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 2rem;
+            padding: 0 20px;
+        }
+        button{
+            font-size: 1.6rem;
+            border: none;
+            padding: 12px;
+            background: #D63B5B;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <video autoplay loop class="video" muted plays-inline>
+            <source src="travel.mkv">
+        </video>
+        <div class="nav">
+            <img src="logo.png" alt="">
+            <div class="navl">
+                <a href="#">HOME</a>
+                <a href="#">COURSES</a>
+                <a href="#">REVIEW</a>
+                <a href="#">CONTACT</a>
+                <button class="button">SING UP</button>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Learn Anything Online.</h1>
+            <form action="">
+                <input type="text" placeholder="Enter Keyword">
+                <button class="as" type="text">Find Course</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
